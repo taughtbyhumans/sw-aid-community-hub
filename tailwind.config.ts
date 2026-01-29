@@ -47,6 +47,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        coral: "hsl(var(--coral))",
+        "light-blue": "hsl(var(--light-blue))",
+        "deep-purple": "hsl(var(--deep-purple))",
+        "warm-white": "hsl(var(--warm-white))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +61,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        heading: ["Oswald", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +88,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out forwards",
       },
     },
   },
