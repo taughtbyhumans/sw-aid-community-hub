@@ -44,6 +44,10 @@ const WhatWeDo = () => {
           Find our upcoming events on{" "}
           <a target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent underline underline-offset-4 transition-colors" href="https://www.linkedin.com/company/swaid-community">
             LinkedIn
+          </a>{" "}
+          and{" "}
+          <a target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent underline underline-offset-4 transition-colors" href="https://www.eventbrite.co.uk/o/swaid-south-west-women-in-ai-and-data-104734941251">
+            Eventbrite
           </a>
         </p>
       </div>
