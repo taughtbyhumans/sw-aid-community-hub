@@ -4,6 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  base: '/sw-aid-community-hub/',
   test: {
     environment: "jsdom",
     base: '/sw-aid-community-hub/',
