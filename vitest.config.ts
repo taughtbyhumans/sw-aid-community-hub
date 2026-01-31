@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/sw-aid-community-hub/',
   test: {
     environment: "jsdom",
-    base: '/sw-aid-community-hub/',
+    base: '/',
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
     include: ["src/**/*.{test,spec}.{ts,tsx}"],
