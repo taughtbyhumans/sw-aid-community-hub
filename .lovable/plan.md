@@ -1,36 +1,41 @@
 
-# Add Social Sharing Image
 
-Adding your branded SW*AID image as the Open Graph and Twitter card image so the site looks professional when shared on social media.
+# Update Social Sharing Image URLs to Absolute Path
+
+Updating the Open Graph and Twitter image URLs to use your custom domain `swaid.co.uk` for reliable social media sharing.
 
 ---
 
 ## Changes
 
-### 1. Copy Image to Public Folder
-Copy `SWAID_-_logo_1200_x_630_px.png` to `public/og-image.png`
+### Update index.html metadata
 
-### 2. Update Metadata in index.html
-Replace the placeholder Lovable images with your branded image:
+Replace the relative image paths with absolute URLs using your custom domain:
 
 **Before:**
-```html
-<meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-<meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-```
-
-**After:**
 ```html
 <meta property="og:image" content="/og-image.png" />
 <meta name="twitter:image" content="/og-image.png" />
 ```
 
+**After:**
+```html
+<meta property="og:image" content="https://swaid.co.uk/og-image.png" />
+<meta name="twitter:image" content="https://swaid.co.uk/og-image.png" />
+```
+
 ---
 
-## Result
-When the site is shared on LinkedIn, Twitter, Facebook, or other platforms, your SW*AID branded image will appear instead of the default Lovable placeholder.
+## Why This Matters
+
+Social media platforms (LinkedIn, Twitter/X, Facebook) need absolute URLs to reliably fetch and display the preview image. Relative paths can sometimes fail to resolve correctly when these platforms scrape your site.
 
 ---
 
-## Note
-For the full URL to work correctly when deployed to GitHub Pages, you may want to use the absolute URL (e.g., `https://yourusername.github.io/sw-aid-community-hub/og-image.png`) after deployment.
+## Testing After Deployment
+
+Once live, you can validate the image appears correctly using:
+- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+
